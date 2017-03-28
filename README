@@ -1,1 +1,22 @@
+This project approximates the MODE-S modulator as a research tool.
+
+
+There are 2 parts of the modulator. The `gen` program generates random packets, computes CRC and does pulse position modulation. Its output are pulses at 20Msamples/s that are sent to `nc` that in turn sends them via UDP port 1234.
+
  ./gen | nc -u 127.0.0.1 1234
+
+ The second part is `mode_s_mod.grc` - gnuradio companion project that receives pulses via UDP port 1234 and does the pulse shaping and writes the samples into a file (varable trace_file).
+ It features adjustable pulse bandwidth.
+
+To run, first start the grc project and adjust the bandwidth, then start the generator by running:
+
+```
+ ./gen | nc -u 127.0.0.1 1234
+```
+
+
+## Compilation
+
+```
+gcc -o gen gen.c
+```
