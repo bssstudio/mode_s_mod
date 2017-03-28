@@ -424,6 +424,33 @@
     </param>
   </block>
   <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(24, 108)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>trace_file</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>"/tmp/trace.dat"</value>
+    </param>
+  </block>
+  <block>
     <key>analog_const_source_x</key>
     <param>
       <key>alias</key>
@@ -494,7 +521,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/tmp/trace.dat</value>
+      <value>trace_file</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -784,7 +811,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(176, 140)</value>
+      <value>(200, 156)</value>
     </param>
     <param>
       <key>_rotation</key>
